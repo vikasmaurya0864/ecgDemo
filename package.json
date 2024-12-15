@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    
+    "homepage": "https://vikasmaurya0864.github.io/ecgDemo/",
     "build": "react-scripts build",
     "lint": "eslint .",
     "preview": "vite preview"
