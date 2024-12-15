@@ -1,0 +1,5 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+export function SpecCard({ icon: Icon, title, description, details }) {
+    return (_jsxs("div", { className: "bg-white rounded-lg shadow-lg p-6", children: [_jsxs("div", { className: "flex items-center mb-4", children: [_jsx("div", { className: "bg-red-100 rounded-lg p-3", children: _jsx(Icon, { className: "h-6 w-6 text-red-500" }) }), _jsx("h3", { className: "ml-4 text-lg font-medium text-gray-900", children: title })] }), _jsx("p", { className: "text-gray-500 mb-4", children: description }), _jsx("ul", { className: "space-y-2", children: details.map((detail, index) => (_jsxs("li", { className: "flex items-center text-sm text-gray-600", children: [_jsx("span", { className: "w-1.5 h-1.5 bg-red-500 rounded-full mr-2" }), detail] }, index))) })] }));
+}
+//# sourceMappingURL=SpecCard.js.map
