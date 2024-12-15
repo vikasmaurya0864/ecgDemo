@@ -7,7 +7,8 @@
     "dev": "vite",
     "homepage": "https://vikasmaurya0864.github.io/ecgDemo",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "build": "tsc && parcel build src/index.html --public-url /ecgDemo/",
+    "deploy": "npm run build && gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -15,9 +16,11 @@
     "@emailjs/browser": "^4.1.0",
     "gh-pages": "^6.2.0",
     "lucide-react": "^0.344.0",
+    "parcel": "^2.13.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.22.1",
+    "react-scripts": "^5.0.1",
     "react-toastify": "^10.0.4"
   },
   "devDependencies": {
